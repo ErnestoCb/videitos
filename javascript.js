@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-// Gets the video src from the data-src on each button
-
+//Trae el source del video del data-src en el boton
 var $videoSrc;  
 $('.video-btn').click(function() {
     $videoSrc = $(this).data( "src" );

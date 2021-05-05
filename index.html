@@ -31,6 +31,9 @@
         color: #fff;
         opacity: 1;
       }
+      .botonCierre {
+        position: absolute;
+      }
     </style>
   </head>
   <body>
@@ -45,7 +48,17 @@
         data-src="https://www.youtube.com/embed/8UVNT4wvIGY"
         data-target="#myModal"
       >
-        Ver El video
+        Ver El video de Youtube
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary video-btn"
+        data-toggle="modal"
+        data-src="https://player.vimeo.com/video/148282411"
+        data-target="#myModal"
+      >
+        Ver El video de Vimeo
       </button>
 
       <!-- Modal -->
@@ -60,15 +73,16 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
+              <!--
               <button
                 type="button"
                 class="close"
-                data-dismiss="modal"
+                data-dismiss="modal
                 aria-label="Close"
               >
                 <span aria-hidden="true">&times;</span>
               </button>
-              <!-- 16:9 aspect ratio -->
+              -->
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe
                   class="embed-responsive-item"
@@ -78,6 +92,10 @@
                   allow="autoplay"
                 ></iframe>
               </div>
+              
+              <button type="button" class="btn btn-dark botonCierre" data-dismiss="modal" aria-label="Close">Este es el Boton que cierra el Video</button>
+
+
             </div>
           </div>
         </div>
