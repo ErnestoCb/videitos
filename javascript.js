@@ -13,7 +13,7 @@ console.log($videoSrc);
 $('#myModal').on('shown.bs.modal', function (e) {
     
 // Esto pone el video en autoplay y que no muestre videos relacionados (los videos que aparecen en la barra de abajo)
-$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+$("#video").attr('src',$videoSrc + "?playsinline=1&autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
 })
     
 
@@ -27,4 +27,4 @@ $('#myModal').on('hide.bs.modal', function (e) {
 
 });
 
-console.log("x23");
+console.log("x223");
