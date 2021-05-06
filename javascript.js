@@ -27,4 +27,4 @@ $('#myModal').on('hide.bs.modal', function (e) {
 
 });
 
-console.log("x");
+console.log("x2");
